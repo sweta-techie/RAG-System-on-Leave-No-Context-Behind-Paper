@@ -55,7 +55,7 @@ def main():
                 try:
                     ai = genai.GenerativeModel(model_name=model)
                     response = ai.generate_content(context)
-                    st.markdown(f'<h2 class="text">Question:</h2>', unsafe_allow_html=True)
+                    st.markdown('<h2 class="text">Question:</h2>', unsafe_allow_html=True)
                     st.markdown(f'<p class="text">{question}</p>', unsafe_allow_html=True)
                     st.markdown('<h2 class="text">Answer:</h2>', unsafe_allow_html=True)
                     st.markdown(f'<p class="text">{response.text}</p>', unsafe_allow_html=True)
